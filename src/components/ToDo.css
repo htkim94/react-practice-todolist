@@ -1,0 +1,104 @@
+.to-do-item-empty {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.to-do-item {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.to-do-main {
+  display: flex;
+  position: relative;
+}
+
+.to-do-content {
+  margin-left: 42px;
+  text-align: left;
+}
+
+.to-do-content > p {
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.to-do-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  background-color: rgb(195, 0, 0);
+}
+
+.edit-button {
+  background-color: limegreen;
+}
+
+.edit-button:hover {
+  background-color: rgb(0, 193, 0);
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -3px;
+}
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  background-color: rgb(220,220,220);
+}
+input[type=checkbox]:checked:before {
+  background-color: #5e65fc;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 13px;
+  left: 8px;
+}
+
+.new-task-input {
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(220,220,220);
+  padding: 10px;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1em;
+  width: 40%;
+}
